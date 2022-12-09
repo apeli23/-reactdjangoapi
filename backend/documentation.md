@@ -4,17 +4,17 @@
 
 In this article, we will demonstrate how to integrate python's Django framework into a reactjs Project. First, let us look at what React and Django mean
 
-
 ## React
+
 React or Reactjs refers to a [Javascript](https://www.freecodecamp.org/news/what-is-javascript-definition-of-js/#:~:text=JavaScript%20is%20a%20dynamic%20programming,with%20only%20HTML%20and%20CSS.) library that is used to build interactive elements in web development. That means it is used by developers to build user interfaces or UI. React also has solid documentation that you can explore through this [link](https://reactjs.org/docs/getting-started.html) and a vibrant ecosystem around it.
 
-
 ## Django
+
 Django refers to a high-level, free, and open-source Python web framework capable of the rapid development of secure and maintainable websites. It solves much of web development hassles so that a developer can focus on writing their app without the need to reinvent the wheel. It also has extensive documentation that you can use to explore its functionalities. You can check for further knowledge of Django though [here](https://docs.djangoproject.com/en/4.1/).
 
-## Github Source Code
+## Source Code
 
-Get the GitHub source code here [Github]()
+Get the GitHub source code [here](https://github.com/apeli23/reactdjango.git)
 
 ## Prerequisites
 
@@ -108,23 +108,24 @@ In Django, there are the template files that we configure for the web pages and 
 
 The code above will inform Django that the static files will be in the `backend/reactdj/build/static` directory.
 To complete the static files configuration procedure, we need to involve URL mapping.
-Create a new file inside the backend folder called `views.py` and paste the following code 
+Create a new file inside the backend folder called `views.py` and paste the following code
 
 ```
 "backend/views.py"
 
-from django.shortcuts import render; #allows Django to render a template file 
+from django.shortcuts import render; #allows Django to render a template file
 
 def index(request):
     return render(request, 'index.html')
 
 ```
+
 The code above will look to render `index.html` file. We have to involve the file above to `urls.py`. Head to `backend/urls.py` directory and replace its contents with the following.
 ;
 
 ```
 "backend/urls.py`"
- 
+
 from django.contrib import admin
 from django.urls import path
 from . import views;
@@ -148,6 +149,6 @@ python manage.py runserver
 ```
 
 Django will provide a link that looks like `http://127.0.0.1:8000/`. If you run the link in your browser, It will provide a react frontend UI, which confirms react integration with Django.
-Currently, we only have the default react template. Feel free to clone the [github]() repo and make changes as you see fit. React and Django integration chive an easy way to manage code for both the backend and front end since the front end and backend are separately written in Django hence making testing, finding, and removing bugs easier.
+Currently, we only have the default react template. Feel free to clone the [github](https://github.com/apeli23/reactdjango.git) repo and make changes as you see fit. React and Django integration chive an easy way to manage code for both the backend and front end since the front end and backend are separately written in Django hence making testing, finding, and removing bugs easier.
 
 Happy coding!
