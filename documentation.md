@@ -6,7 +6,7 @@ In this article, we will demonstrate how to integrate python's Django framework 
 
 ## React
 
-React or Reactjs refers to a [Javascript](https://www.freecodecamp.org/news/what-is-javascript-definition-of-js/#:~:text=JavaScript%20is%20a%20dynamic%20programming,with%20only%20HTML%20and%20CSS.) library that is used to build interactive elements in web development. That means it is used by developers to build user interfaces or UI. React also has solid documentation that you can explore through this [link](https://reactjs.org/docs/getting-started.html) and a vibrant ecosystem around it.
+React or Reactjs refers to a [Javascript](https://www.freecodecamp.org/news/what-is-javascript-definition-of-js/#:~:text=JavaScript%20is%20a%20dynamic%20programming,with%20only%20HTML%20and%20CSS.) library that is used to build interactive elements in web development. That means it is used by developers to build user interfaces(UI). React also has solid documentation that you can explore through this [link](https://reactjs.org/docs/getting-started.html) and a vibrant ecosystem around it.
 
 ## Django
 
